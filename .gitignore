@@ -106,7 +106,7 @@ ENV/
 # dataset
 dataset/VOCdevkit
 ini_checkpoints
-model
+model1
 *.record
 models
 dataset/inference_output/
