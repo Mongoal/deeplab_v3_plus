@@ -10,7 +10,7 @@ import sys
 
 import tensorflow as tf
 
-import deeplab_model
+import se_model
 from utils import preprocessing
 
 
@@ -41,7 +41,7 @@ def main(unused_argv):
   os.environ['TF_ENABLE_WINOGRAD_NONFUSED'] = '1'
 
   model = tf.estimator.Estimator(
-      model_fn=deeplab_model.deeplabv3_plus_model_fn,
+      model_fn=se_model.deeplabv3_plus_model_fn,
       model_dir=FLAGS.model_dir,
       params={
           'output_stride': FLAGS.output_stride,
