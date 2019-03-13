@@ -107,6 +107,10 @@ ENV/
 dataset/VOCdevkit
 ini_checkpoints
 model1
+mix
+segmentation_result
+images
+
 *.record
 models
 dataset/inference_output/
